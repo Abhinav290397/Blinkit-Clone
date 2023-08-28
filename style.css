@@ -1,0 +1,189 @@
+.Our-location{
+
+}
+.Our-location>h5{
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+    margin-bottom: 6px;
+    font-size: 18px;
+}
+.Our-location>p{
+    margin: 0px;
+
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.searchDiv{
+    padding: 0px 12px;
+    border: 1px solid rgb(232, 232, 232);
+    border-radius: 12px;
+    background: rgb(248, 248, 248);
+    color: rgb(130, 130, 130);
+}
+.searchDiv>input{
+    border:none;
+    background-color: transparent;
+    width: 40vw;
+    height: 45px;
+}
+::placeholder{
+    font-size: 14px;
+    line-height: 18px;
+    color: rgb(153, 153, 153);
+}
+.LoginButon{
+    background-color: rgb(12, 131, 31) !important;/* !important is used to override the existing BS*/
+    border-radius: 8px; 
+}
+
+.my-categories{
+    width: 75%;
+}
+
+/*white-property eg class.*/
+.my-para{
+    /*white-space: normal;*/
+    /*white-space: nowrap;*//*the excessive sentence will not go to next line instead it continues in same line and our page become scrollable.*/
+    /*white-space: pre;*//* It will give the sentence in same format as we write*/
+    
+}
+
+.my-container{
+    margin:auto;
+    overflow-x:scroll;/*to scroll div horizontally....overflow-y:scroll->to scroll div vertically.*/
+    width: 82%;
+}
+.my-list{
+    white-space: nowrap;
+}
+.my-list>img{
+    padding:12px;
+}
+::-webkit-scrollbar{ /*It is used to remove the coming scrollbar. */
+    display: none;
+}
+
+
+.category-section{
+    margin:auto;
+    width:80%;
+    overflow-x: scroll;
+}
+.category-section-row{
+    width: 100%;
+    overflow-x: scroll;
+}
+.my-items{
+    white-space: nowrap;
+}
+.my-card{
+    width:179px;
+    margin-inline: 10px;
+}
+
+.my-card-time{
+    width:fit-content;
+    height: 10px;
+    border-radius: 4px;
+    background-color: rgb(248, 248, 248);
+    padding: 0px 4px;
+    font-weight: 700;
+    font-size: 9px;
+    color: rgb(54, 54, 54);
+}.my-card-title{
+    color: rgb(31, 31, 31);
+    font-weight: 600;
+    font-size: 13px;
+}
+.my-card-wt{
+    color: #666666;
+    font:12px Ocra,Helvetica;
+}
+.my-card-price{
+    color: rgb(31, 31, 31);
+    font-weight: 600;
+    font-size: 12px;
+}
+
+
+
+
+.my-footer{
+    width:80%;
+    margin:auto;
+}
+.row-3{
+    text-align: justify;
+    color: #666666;
+    font-size: 13px;
+    padding: 10px;
+}
+.row-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.row-2>p{
+    width: 30%;
+}
+.download-section>p{
+    color: #666666;
+    font-weight: 600;
+    font-size: 14px;
+    margin: 16px;
+}
+.download-btn{
+    background-color: #213b50;
+    color: white;
+    border-radius: 10px;
+    margin: 10px;
+    border:none;
+    padding: 10px;
+}
+.social-btn{
+    width:30px;
+    height: 30px;
+    border-radius:50%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    margin-inline: 10px;
+}
+.social-icons{
+    display: flex;
+}
+.row-1{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.useful-links{
+    flex: 2;
+}
+.categories-links{
+    flex:3;
+}
+table{
+    width: 100%;
+}
+td{
+    padding: 5px;
+    color: #666666;
+    font-size: 14px;
+}
+
+/*To made page responsive to various screen dimensions.*/
+
+@media screen and (max-width:768px){
+    nav,.row-2,.row-1{
+        flex-direction: column !important;
+    }
+    .vertical-line,.Hero-section>img{
+        display: none;
+    }
+}
